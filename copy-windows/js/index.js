@@ -31,7 +31,9 @@ function myTimer() {
     document.getElementById("time").textContent = date.toLocaleTimeString(); // *** ver com buscar somente hora e minuto ***
 }
 showTimer();
-myTimer()
+
+setInterval(myTimer, 1000)
+
 
 
 
