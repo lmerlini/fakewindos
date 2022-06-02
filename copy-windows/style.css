@@ -10,6 +10,10 @@
 }
 
 .navegacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
     width: 100%;
     height: var(--tamanho-menu);
     background: #434141;
@@ -17,7 +21,33 @@
     bottom: 0;
 }
 
-.iniciar {
+.navegacao-item {
+    display: grid;
+    color: #fff;
+    height: 60px;
+    justify-self: end;
+    align-content: center;
+
+    padding: 0 25px;
+}
+
+.navegacao-item:hover {
+    background: #7873736a;
+}
+
+.horaData {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: var(--tamanho-menu);
+    color: white;
+
+}
+
+.menu-iniciar {
     display: flex;
     width: max-content;
     height: var(--tamanho-menu);
@@ -26,6 +56,8 @@
     font-weight: 100;
     align-content: center;
     flex-wrap: wrap;
+
+    padding: 0 20px;
 }
 
 .checked {
@@ -70,6 +102,12 @@
     overflow: hidden;
 }
 
-.iniciar:hover {
+.menu-iniciar:hover {
     background: #7873736a;
+}
+
+.main-window {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 80px 0;
 }

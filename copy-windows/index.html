@@ -14,27 +14,64 @@
   </head>
   <body>
     <div class="window">
+      <main class="main-window">
+        <!-- TODO -->
+        <h1>Olá Mundo</h1>
+        <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            optio, sunt magni sapiente ea quibusdam accusamus temporibus ut
+            totam porro repellendus odio aspernatur animi! Pariatur aliquam
+            animi tenetur assumenda fuga.
+          </p>
+        </article>
+      </main>
+
       <nav class="navegacao" draggable="true">
-        <div class="iniciar" data-toggle="toggleMenu">FAKEWINDOS</div>
+        <div class="menu-iniciar" data-toggle="toggleMenu">FAKEWINDOS</div>
+
+        <div class="navegacao-item" classantiga="horaData-1">
+          <span id="time">00:00:00</span>
+          <span id="history"></span>
+        </div>
 
         <div data-toggle="active" class="dados-off">
           <ul class="dados-menu">
-            <li class="item" draggable="true">
+            <li
+              class="item"
+              draggable="true"
+              onclick="alert('Abriu o WORD .. BOOM')"
+            >
               <img src="img/microsoft-word-logo.svg" />
             </li>
-            <li class="item" draggable="true">
+
+            <li
+              class="item"
+              draggable="true"
+              onclick="alert('Abriu o EXCEL .. BOOM')"
+            >
               <img src="img/microsoft-excel-logo.svg" />
             </li>
 
             <li class="item" draggable="true">
-              <img src="img/corinthians-logo-2.svg" />
+              <a href="https://www.corinthians.com.br/" target="_blank">
+                <img src="img/corinthians-logo-2.svg"
+              /></a>
             </li>
 
-            <li class="item" draggable="true">
+            <li
+              class="item"
+              draggable="true"
+              onclick='window.open("https://www.gmail.com/")'
+            >
               <img src="img/gmail-logo-2020.svg" />
             </li>
 
-            <li class="item" draggable="true">
+            <li
+              class="item"
+              draggable="true"
+              onclick="window.open('https://onepieceex.net/')"
+            >
               <img src="img/luffy.jpg" />
             </li>
           </ul>
