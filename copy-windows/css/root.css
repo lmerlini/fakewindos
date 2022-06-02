@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --tamanho-menu: 60px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 20px;
+}
+
+p>span {
+    font-size: 2rem;
+}

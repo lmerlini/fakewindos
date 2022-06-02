@@ -1,0 +1,122 @@
+@import './root.css';
+@import './dados.css';
+
+
+.window {
+    width: 100%;
+    height: 100vh;
+    background: #c1bebe;
+    position: relative;
+}
+
+.navegacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    width: 100%;
+    height: var(--tamanho-menu);
+    background: #434141;
+    position: absolute;
+    bottom: 0;
+}
+
+.navegacao-item {
+    display: grid;
+    color: #fff;
+    height: 60px;
+    justify-self: end;
+    align-content: center;
+
+    padding: 0 25px;
+}
+
+.navegacao-item:hover {
+    background: #7873736a;
+}
+
+.horaData {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: var(--tamanho-menu);
+    color: white;
+
+}
+
+.menu-iniciar {
+    display: flex;
+    width: max-content;
+    height: var(--tamanho-menu);
+    cursor: pointer;
+    color: #fff;
+    font-weight: 100;
+    align-content: center;
+    flex-wrap: wrap;
+
+    padding: 0 20px;
+}
+
+.checked {
+    background: #7873736a;
+}
+
+.dados-off {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.dados {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    background: #4341416a;
+    bottom: calc(var(--tamanho-menu));
+}
+
+.item {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid #7873736a;
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.item:hover {
+    background: #7873736a;
+    border-radius: 8px;
+    resize: both;
+    overflow: hidden;
+}
+
+.menu-iniciar:hover {
+    background: #7873736a;
+}
+
+.main-window {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+
+
+.vidro {
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 8px;
+
+
+}
